@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     private TankManager gameWinner = null;
     private TankManager roundWinner = null;
 
-
     private void Start()
     {
         endWait = new WaitForSeconds(endDelay);
