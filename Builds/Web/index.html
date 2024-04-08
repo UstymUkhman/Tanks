@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Ustym Ukhman">
+    <meta charset="utf-8" />
+    <meta name="author" content="Ustym Ukhman" />
 
-    <meta name="theme-color" content="#232323">
-    <meta name="msapplication-TileColor" content="#232323">
+    <meta name="theme-color" content="#232323" />
+    <meta name="msapplication-TileColor" content="#232323" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Ustym,Ukhman,Ustym Ukhman,Unity3D,Tanks,Game">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="Ustym,Ukhman,Ustym Ukhman,Unity3D,Tanks,Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <title>Unity WebGL Player | Tanks</title>
 
@@ -24,31 +24,34 @@
       }
 
       canvas#canvas {
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
         aspect-ratio: 16 / 9;
         position: absolute;
 
-        height: 100vh;
+        height: 720px;
+        width: 1280px;
+
         left: 50%;
+        top: 50%;
       }
     </style>
   </head>
 
   <body>
-    <canvas id="canvas" width="1920" height="1080"></canvas>
+    <canvas id="canvas" width="1280px" height="720px"></canvas>
     <script type="text/javascript" src="Build/Web.asm.loader.js"></script>
 
     <script type="text/javascript">
-      createUnityInstance(document.getElementById('canvas'), {
-        frameworkUrl: 'Build/Web.asm.framework.js',
-        streamingAssetsUrl: 'StreamingAssets',
-        devicePixelRatio: devicePixelRatio,
-        memoryUrl: 'Build/Web.asm.mem',
-        codeUrl: 'Build/Web.asm.js',
-        companyName: 'UstymUkhman',
-        dataUrl: 'Build/Web.data',
-        productVersion: '1.0.0',
-        productName: 'Tanks'
+      createUnityInstance(document.getElementById("canvas"), {
+        frameworkUrl: "Build/Web.asm.framework.js",
+        streamingAssetsUrl: "StreamingAssets",
+        memoryUrl: "Build/Web.asm.mem",
+        codeUrl: "Build/Web.asm.js",
+        companyName: "UstymUkhman",
+        dataUrl: "Build/Web.data",
+        productVersion: "1.0.0",
+        productName: "Tanks",
+        devicePixelRatio
       });
     </script>
   </body>
